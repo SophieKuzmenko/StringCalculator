@@ -54,5 +54,20 @@ namespace StringCalculatorTest
             //Then
             Assert.Equal(arg1 + arg2, res);
         }
+        [Fact]
+        public void ThreeArgSeparatedTest()
+        {
+            //Given
+            int arg1 = 23;
+            int arg2 = 8;
+            int arg3 = 2;
+            string input = arg1 + "\n" + arg2 + "," + arg3;
+
+            //When
+            int res = StringCalculator.Calculate(input);
+
+            //Then
+            Assert.Equal(arg1 + arg2 + arg3, res);
+        }
     }
 }
