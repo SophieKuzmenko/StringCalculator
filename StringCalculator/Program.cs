@@ -5,7 +5,8 @@
         //if (arg.Length == 0)
         //    return 0;
         int arg1, res=0;
-        string[] temp = arg.Split(',', StringSplitOptions.RemoveEmptyEntries);
+        string[] delims = new string[] { ",", "\n" };
+        string[] temp = arg.Split(delims, StringSplitOptions.RemoveEmptyEntries);
         foreach(string s in temp)
         {
             if (Int32.TryParse(s, out arg1))

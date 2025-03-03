@@ -40,5 +40,19 @@ namespace StringCalculatorTest
             //Then
             Assert.Equal(arg1+arg2, res);
         }
+        [Fact]
+        public void DoubleArgSeparatedByNewlineTest()
+        {
+            //Given
+            int arg1 = 23;
+            int arg2 = 8;
+            string input = "23\n8";
+
+            //When
+            int res = StringCalculator.Calculate(input);
+
+            //Then
+            Assert.Equal(arg1 + arg2, res);
+        }
     }
 }
