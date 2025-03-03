@@ -1,2 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿public class StringCalculator
+{
+   public static int Calculate(string arg) 
+    { 
+        return 0;
+    }
+   
+    public static void Main() { }
+}
