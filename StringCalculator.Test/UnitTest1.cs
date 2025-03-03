@@ -14,5 +14,17 @@ namespace StringCalculatorTest
             //Then
             Assert.Equal(0, res);
         }
+        [Fact]
+        public void SingleArgTest()
+        {
+            //Given
+            int arg = 23;
+
+            //When
+            int res = StringCalculator.Calculate(arg.ToString());
+
+            //Then
+            Assert.Equal (arg, res);
+        }
     }
 }
