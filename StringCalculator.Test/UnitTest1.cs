@@ -61,7 +61,7 @@ namespace StringCalculatorTest
             int arg1 = 23;
             int arg2 = 8;
             int arg3 = 2;
-            string input = arg1 + "\n" + arg2 + "," + arg3;
+            string input = arg1 + "," + arg2 + "\n" + arg3;
 
             //When
             int res = StringCalculator.Calculate(input);
